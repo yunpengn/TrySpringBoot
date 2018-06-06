@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TrySpringBootApplicationTests {
-    private MockMvc mvc = MockMvcBuilders.standaloneSetup(new HelloController()).build();
+    private MockMvc mvc = MockMvcBuilders.standaloneSetup(new HomeController()).build();
 
     @Autowired
     private AppProperties appProperties;
