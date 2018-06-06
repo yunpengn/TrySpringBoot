@@ -11,4 +11,9 @@ public class HomeController {
         map.addAttribute("title", "Welcome to this website!");
         return "/index";
     }
+
+    @RequestMapping("/createError")
+    public String createError() throws Exception {
+        throw new Exception("Create some error");
+    }
 }

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Something went wrong</title>
+</head>
+<body>
+<h1>Something went wrong...</h1>
+<div>You are trying to visit <span th:text="${url}">this URL</span>.</div>
+<div>The error message is, <span th:text="${exception.message}">this message</span>.</div>
+</body>
+</html>
