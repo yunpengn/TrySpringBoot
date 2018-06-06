@@ -34,5 +34,6 @@ public class TrySpringBootApplicationTests {
     public void testProperties() {
         Assert.assertEquals("Try Spring Boot", appProperties.getName());
         Assert.assertEquals("My first attempt to Spring Boot", appProperties.getTitle());
+        Assert.assertEquals(8080, appProperties.getPort());
     }
 }
