@@ -32,7 +32,7 @@ public class TrySpringBootApplicationTests {
 
     @Test
     public void testProperties() {
-//        Assert.assertEquals("Try Spring Boot", appProperties.);
-//        Assert.assertEquals("My first attempt to Spring Boot", appProperties.);
+        Assert.assertEquals("Try Spring Boot", appProperties.getName());
+        Assert.assertEquals("My first attempt to Spring Boot", appProperties.getTitle());
     }
 }
