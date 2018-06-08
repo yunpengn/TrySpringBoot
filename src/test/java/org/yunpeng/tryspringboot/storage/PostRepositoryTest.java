@@ -23,5 +23,8 @@ public class PostRepositoryTest {
         assertEquals(2, postRepository.findAll().size());
         assertEquals("Here is the news body", postRepository.findByTitle("some news").getBody());
         assertEquals("Written by someone else", postRepository.findByTitle("another news").getBody());
+
+        postRepository.deleteAll();
+        assertEquals(0, postRepository.findAll().size());
     }
 }
