@@ -18,17 +18,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TrySpringBootApplicationTests {
-    private MockMvc mvc = MockMvcBuilders.standaloneSetup(new HomeController()).build();
-
     @Autowired
     private AppProperties appProperties;
-
-    @Test
-    public void contextLoads() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello world")));
-    }
 
     @Test
     public void testProperties() {

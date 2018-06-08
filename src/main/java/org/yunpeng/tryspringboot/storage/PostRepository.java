@@ -6,7 +6,7 @@ import org.springframework.data.repository.query.Param;
 import org.yunpeng.tryspringboot.models.Post;
 
 public interface PostRepository extends JpaRepository<Post, Long> {
-    @Query("from User u where u.title = :title")
+    @Query("from Post p where p.title = :title")
     Post findPost(@Param("title") String title);
 
     Post findByTitle(String title);

@@ -6,9 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Post {
     @Id
     @GeneratedValue
@@ -19,4 +21,9 @@ public class Post {
 
     @Column(nullable = true)
     private String body;
+
+    public Post(String title, String body) {
+        this.title = title;
+        this.body = body;
+    }
 }
