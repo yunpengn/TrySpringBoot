@@ -16,4 +16,9 @@ public class HomeController {
     public String createError() throws Exception {
         throw new Exception("Create some error");
     }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
 }
