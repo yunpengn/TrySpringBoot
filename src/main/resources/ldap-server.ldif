@@ -1,13 +1,13 @@
-dn: dc=yunpeng
+dn: dc=yunpeng,dc=org
 objectClass: top
 objectClass: domain
 
-dn: ou=users,dc=yunpeng
+dn: ou=users,dc=yunpeng,dc=org
 objectclass: top
 objectclass: organizationalUnit
 ou: users
 
-dn: uid=admin,ou=users,dc=yunpeng
+dn: uid=admin,ou=users,dc=yunpeng,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson

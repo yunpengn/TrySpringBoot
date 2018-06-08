@@ -10,7 +10,7 @@ import org.springframework.ldap.odm.annotations.Id;
 import lombok.Data;
 
 @Data
-@Entry(base = "ou=users,dc=yunpeng", objectClasses = "inetOrgPerson")
+@Entry(base = "ou=users,dc=yunpeng,dc=org", objectClasses = "inetOrgPerson")
 public class Person {
     @Id
     private Name id;
