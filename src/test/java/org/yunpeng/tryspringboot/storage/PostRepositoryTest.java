@@ -21,5 +21,7 @@ public class PostRepositoryTest {
         postRepository.save(new Post("another news", "Written by someone else"));
 
         assertEquals(2, postRepository.findAll().size());
+        assertEquals("Here is the news body", postRepository.findByTitle("some news").getBody());
+        assertEquals("Written by someone else", postRepository.findByTitle("another news").getBody());
     }
 }
