@@ -1,0 +1,18 @@
+dn: dc=yunpeng
+objectClass: top
+objectClass: domain
+
+dn: ou=users,dc=yunpeng
+objectclass: top
+objectclass: organizationalUnit
+ou: users
+
+dn: uid=admin,ou=users,dc=yunpeng
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Admin User
+sn: admin
+uid: admin
+userPassword: {SHA}7C4A8D09CA3762AF61E59520943DC26494F8941B

@@ -31,11 +31,12 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-security")
-
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.postgresql:postgresql:42.2.2")
+    compile("org.springframework.boot:spring-boot-starter-data-ldap")
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("com.unboundid:unboundid-ldapsdk:4.0.6")
 
     compileOnly 'org.projectlombok:lombok:1.18.0'
     apt "org.projectlombok:lombok:1.18.0"
