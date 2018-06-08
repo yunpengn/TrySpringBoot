@@ -16,10 +16,10 @@ public class Post {
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 5)
     private String title;
 
-    @Column(nullable = true)
+    @Column
     private String body;
 
     public Post(String title, String body) {
